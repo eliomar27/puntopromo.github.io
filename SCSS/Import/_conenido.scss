@@ -118,39 +118,14 @@ html {
         }
 
         div {
-            
-                z-index: 10;
-                background: $wallpaper-menu;
-            
-        }
-
-        #marker {
-            position: absolute;
-            top: 0;
-            transition: 0.5s;
-            z-index: 1;
-        }
-
-        #marker::before {
-            content: '';
-            position: absolute;
-            top: 15px;
-            left: 50px;
-            transform: translatex(-50%);
-            width: 20px;
-            height: 20px;
-            background: #00f7ff;
-            box-shadow: 0 0 15px #00f7ff,
-                0 0 30px #00f7ff,
-                0 0 45px #00f7ff,
-                0 0 60px #00f7ff;
-            border-radius: 20%;
+            z-index: 10;
+            background: $wallpaper-menu;
         }
 
         body.menu & {
             width: $width-aside;
-            //  overflow: visible;
 
+            //  overflow: visible;
             li:hover {
                 width: $width-aside-hover-active;
                 height: $height-aside-hover-active;
@@ -187,18 +162,17 @@ html {
                 }
             }
 
-            div {
-                li {
-                    a {
-                        text-decoration: none;
-                        color: $color-a;
+            li {
+                a {
+                    text-decoration: none;
+                    color: $color-a;
 
-                        span:hover {
-                            color: $hover-a;
-                        }
+                    span:hover {
+                        color: $hover-a;
                     }
                 }
             }
+
         }
     }
 

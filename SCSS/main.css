@@ -458,29 +458,6 @@ html {
   background: #212e36;
 }
 
-.contenedor .aside #marker {
-  position: absolute;
-  top: 0;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  z-index: 1;
-}
-
-.contenedor .aside #marker::before {
-  content: '';
-  position: absolute;
-  top: 15px;
-  left: 50px;
-  -webkit-transform: translatex(-50%);
-          transform: translatex(-50%);
-  width: 20px;
-  height: 20px;
-  background: #00f7ff;
-  -webkit-box-shadow: 0 0 15px #00f7ff, 0 0 30px #00f7ff, 0 0 45px #00f7ff, 0 0 60px #00f7ff;
-          box-shadow: 0 0 15px #00f7ff, 0 0 30px #00f7ff, 0 0 45px #00f7ff, 0 0 60px #00f7ff;
-  border-radius: 20%;
-}
-
 body.menu .contenedor .aside {
   width: 210px;
 }
@@ -522,12 +499,12 @@ body.menu .contenedor .aside li span b:hover {
   color: #afafaf;
 }
 
-body.menu .contenedor .aside div li a {
+body.menu .contenedor .aside li a {
   text-decoration: none;
   color: #969ca0;
 }
 
-body.menu .contenedor .aside div li a span:hover {
+body.menu .contenedor .aside li a span:hover {
   color: #afafaf;
 }
 
