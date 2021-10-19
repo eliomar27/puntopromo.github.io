@@ -96,6 +96,12 @@ html {
         position: fixed;
         height: 100vh;
 
+        .line-menu {
+            width: 50px;
+            height: 1px;
+            background: $color-border;
+        }
+
         li {
             z-index: 10;
             background-color: $wallpaper-menu;
@@ -183,14 +189,16 @@ html {
                 h2 {
                     padding: 0px 0px 0px 10px;
                 }
-                div{
+
+                div {
                     margin-top: 10px;
                     background: #fff;
                     display: grid;
                     grid-template-columns: repeat(3, auto);
                     grid-template-rows: 20px;
                     gap: 10px;
-                    a{
+
+                    a {
                         text-align: center;
                         height: 15px;
                         text-decoration: none;
@@ -198,12 +206,14 @@ html {
                         border-radius: 5px;
                         padding: 5px;
                         background: #f5f5f5;
-                       color:#006eae;
-                       &:hover{
-                           text-decoration-line:underline;
-                       }
+                        color: #006eae;
+
+                        &:hover {
+                            text-decoration-line: underline;
+                        }
                     }
                 }
+
                 i {
                     color: $color-i;
                     margin: 5px;
@@ -213,7 +223,7 @@ html {
                     margin: auto;
                     margin-right: -55px;
                     text-align: justify;
-                   // margin: 10px;
+                    // margin: 10px;
                 }
 
                 img {
@@ -233,6 +243,7 @@ html {
                     border-radius: 20px;
                     background: $wallpaper-button-section;
                     margin: 10px -50px 50px 5px;
+
                     //border: none;
                     &:hover {
 

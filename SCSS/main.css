@@ -506,6 +506,12 @@ html {
   height: 100vh;
 }
 
+.contenedor .aside .line-menu {
+  width: 50px;
+  height: 1px;
+  background: #5b5d64;
+}
+
 .contenedor .aside li {
   z-index: 10;
   background-color: #212e36;
