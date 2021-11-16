@@ -14,14 +14,14 @@ $hover-menu-perfil: linear-gradient(rgb(255, 0, 0), rgb(108, 85, 255));
 $color-a:#969ca0;
 $hover-a:#afafaf;
 //$hover-aside-perfil-a: linear-gradient(rgb(255, 0, 0), rgb(255, 204, 0));
-$img-perfil:url(42465612.jfif);
+$img-perfil:url(img/92.jpg);
 $color-shadow:#333;
 $color-border:#5b5d64;
 $color-aside-li-hover:#002348;
 $color-i:rgb(109, 109, 109);
 $wallpaper-button-section:rgb(250, 250, 250);
 
-$svg-color:#969ca0;
+$svg-color:#ccddff;
 $svg-search:#444;
 $svg-switch-light:#345;
 $svg-switch-dark:rgb(239, 238, 247);
@@ -34,6 +34,20 @@ $dark-wallpaper-switch: #343d5b;
 $light-wallpaper-switch: #fff;
 $switch-circle: #ffffff;
 
+//wallpaper
+$color-1:#000b22;
+//wallpaper-segundo
+$color-2:#0051ff;
+//wallpaper-segundo-hover
+$color-3:#6d7688;
+//border
+$color-4:#0051ff;
+//shadow
+$color-5:#0051ff;
+//titulo
+$color-6:#40e0d0;
+//parrafo
+$color-7:#ccddff;
 //-----------------------mapa-------------------
 $color-div:(
     a:#ffee00,
@@ -59,47 +73,35 @@ $border-div:(
     10:20% 20% /30% 70%,
 );
 body {
-    background: $wallpaper-main;
+    background: $color-1;
     @include fondo;
 
     .header {
-        opacity: $opacity-menu;
-        background: $wallpaper-menu;
-        border: $color-border solid 1px;
+        background: $color-1;
+        border: $color-4 solid 1px;
+        box-shadow: 1px 1px 5px $color-4;
         border-top: 0;
         border-left: 0;
         border-right: 0;
-
-        .logo-texto {
-            b {
-                color: $color-texto-promo;
-
-                &:hover {
-                    color: $color-texto-promo-hover;
-                }
-            }
-        }
-
         .header-menu-desplegable {
-            background: $wallpaper-menu-desplegable-usuario;
+            background: $color-1;
         }
     }
 
     .main {
         div {
-            opacity: $opacity-main;
-            background: $wallpaper-main;
+            background: $color-1;
         }
     }
 
     .aside {
-        background: $wallpaper-menu;
-        border: $color-border solid 1px;
+        background: $color-1;
+        border: $color-4 solid 1px;
         border-top: 0;
         border-left: 0;
         border-bottom: 0;
         .menu{
-            border: $color-border solid 1px;
+            border: $color-4 solid 1px;
             border-top: 0;
             border-left: 0;
             border-right: 0;

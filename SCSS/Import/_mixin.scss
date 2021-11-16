@@ -4,6 +4,11 @@
   background-size: 100% 100%;
   background-blend-mode: difference;
 }
+@mixin imagenes {
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background: cover;    
+}
 
 @mixin svg-tamaño {
   width: 100%;
@@ -104,4 +109,10 @@
           height: 30px;
       }
   }
+}
+
+@mixin cutout-text {
+    /*para que funcione tiene que estar el fondo blanco y letras negras*/
+    font-weight: bold;
+    mix-blend-mode: screen;
 }
