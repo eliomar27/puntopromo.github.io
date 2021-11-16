@@ -932,7 +932,7 @@ a {
   -ms-grid-columns: subgrid;
       grid-template-columns: subgrid;
   background: #ffcc00;
-  background: url(css/img/290.jpg);
+  background: url(img/290.jpg);
   -ms-grid-column: 1;
   -ms-grid-column-span: 12;
   grid-column: 1 / span 12;
@@ -1040,7 +1040,7 @@ a {
   border: none;
   outline: none;
   background-color: #000f80;
-  color: white;
+  color: #ffcc00;
   cursor: pointer;
   padding: 15px;
   border-radius: 4px;
@@ -1049,6 +1049,7 @@ a {
 }
 
 #myBtn:hover {
-  background-color: white;
+  background-color: #ffcc00;
+  color: #000f80;
 }
 /*# sourceMappingURL=main.css.map */
