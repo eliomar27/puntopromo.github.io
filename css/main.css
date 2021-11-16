@@ -932,7 +932,7 @@ a {
   -ms-grid-columns: subgrid;
       grid-template-columns: subgrid;
   background: #ffcc00;
-  background: url(img/290.jpg);
+  background: url(css/img/290.jpg);
   -ms-grid-column: 1;
   -ms-grid-column-span: 12;
   grid-column: 1 / span 12;
@@ -1024,6 +1024,10 @@ a {
      object-fit: cover;
   height: 100%;
   width: 100%;
+}
+
+.a .a-footer {
+  grid-column: span 12;
 }
 
 #myBtn {
