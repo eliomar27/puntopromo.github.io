@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap");
 @import url(import/normalize.css);
+@import url("https://fonts.googleapis.com/css2?family=Parisienne&display=swap");
 .contenedor-pagina {
   display: -ms-grid;
   display: grid;
@@ -1057,6 +1058,8 @@ body.menu .aside li a span {
      object-fit: cover;
   height: 100%;
   width: 100%;
+  max-height: 300px;
+  max-width: 500px;
 }
 
 .a1 .a1-footer {
@@ -1064,14 +1067,113 @@ body.menu .aside li a span {
   font-size: 1.75em;
 }
 
+.a2 .a2-portada {
+  -ms-grid-columns: subgrid;
+      grid-template-columns: subgrid;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 12;
+  grid-column: 1 / span 12;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-blend-mode: difference;
+  display: -ms-grid;
+  display: grid;
+  height: 400px;
+}
+
+.a2 .a2-portada picture {
+  z-index: 1;
+  position: absolute;
+  overflow: hidden;
+  height: 400px;
+  width: 100%;
+}
+
 .a2 .a2-portada picture img {
-  width: 200px;
-  height: 200px;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.a2 .a2-portada .a2-portada-texto {
+  z-index: 10;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 12;
+  grid-column: 1 / span 12;
+  width: 900px;
+  margin: auto;
+  border-radius: 30px;
+  margin-top: 50px;
+  font-family: 'Parisienne', cursive;
+}
+
+.a2 .a2-portada .a2-portada-texto h1 {
+  font-family: 'Parisienne', cursive;
+  z-index: 2;
+  text-shadow: 4px 4px 3px #000000;
+  text-align: center;
+  font-size: 8em;
+  color: #fff;
+  margin: 0;
+}
+
+.a2 .a2-portada .a2-portada-texto h2, .a2 .a2-portada .a2-portada-texto .a1 .a1-portada .a1-portada-texto h3, .a1 .a1-portada .a1-portada-texto .a2 .a2-portada .a2-portada-texto h3 {
+  font-family: 'Parisienne', cursive;
+  padding: 20px;
+  z-index: 2;
+  text-shadow: 4px 4px 3px #040404;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 12;
+  grid-column: 1 / span 12;
+  text-align: center;
+  font-size: 4em;
+  color: #f8f8f8;
+}
+
+.a2 .a2-article {
+  grid-column: span 12;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: subgrid;
+      grid-template-columns: subgrid;
+}
+
+.a2 .a2-article .a2-titulo {
+  grid-column: span 12;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: subgrid;
+      grid-template-columns: subgrid;
+}
+
+.a2 .a2-article .a2-titulo h2, .a2 .a2-article .a2-titulo .a1 .a1-portada .a1-portada-texto h3, .a1 .a1-portada .a1-portada-texto .a2 .a2-article .a2-titulo h3 {
+  padding: 10px;
+  grid-column: span 8;
+  text-align: center;
+}
+
+.a2 .a2-article .a2-parrafo {
+  grid-column: span 8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.a2 .a2-article .a2-imagen {
+  grid-column: span 4;
 }
 
 .a2 .a2-article .a2-imagen picture img {
-  width: 200px;
-  height: 200px;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-height: 300px;
 }
 
 #myBtn {
