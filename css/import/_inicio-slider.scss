@@ -32,11 +32,11 @@
             border-radius: 5px;
             box-shadow: 0 5px 25px #4286f4a8;
             h2 {
-                font-size: $size-text-slider-info-h2;
+                font-size:2em;
                 font-weight: 800;
             }
             p {
-                font-size: $size-text-slider-info-p;
+                font-size: 1em;
                 font-weight: 400;
             }
         }
@@ -46,12 +46,12 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        opacity: 0;
+        opacity: 1;
         transition: opacity 0s ease;
         .prev-btn,
         .next-btn {
             z-index: 999;
-            font-size: $size-text-slider-navigation-btn;
+            font-size: 1em;
             color: #222;
             background: rgba(255, 255, 255, 0.8);
             box-shadow: 0 5px 25px #4285F4;

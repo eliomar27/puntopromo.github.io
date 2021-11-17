@@ -3,8 +3,9 @@
   grid-row: 1 / span 2;
   border-right: #000000 solid 2px;
   box-sizing: border-box;
-  height: 100vh;
+  height: 100%;
   position: fixed;
+  background: #ffffff;
   .header-menu {
     svg {
       margin: 0 auto;
@@ -52,6 +53,7 @@
         margin-left: 42px;
         font-size: 1.25em;
         font-weight:100;
+        font-weight:bolder;
       }
     }
     li {
@@ -64,6 +66,7 @@
           margin: -42px 0px 0px 42px;
           padding-top: 7.5px;
           font-size: 1.25em;
+          font-weight:bolder;
           position: absolute;
           display: block;
         }
