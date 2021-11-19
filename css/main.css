@@ -6,6 +6,7 @@
       grid-template-columns: 42px auto;
   -ms-grid-rows: 42px auto;
       grid-template-rows: 42px auto;
+  min-width: 500px;
 }
 
 .contenedor-pagina .main {

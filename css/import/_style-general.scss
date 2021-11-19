@@ -3,7 +3,9 @@
   display: grid;
   grid-template-columns: 42px auto;
   grid-template-rows: 42px auto;
+  min-width: 500px;
   .main {
+
     grid-column: 2 / span 1;
     grid-row: 2 / span 1;
     .opacar {
