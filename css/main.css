@@ -1241,13 +1241,15 @@ body.menu .aside li a span {
     height: 26px;
     width: 26px;
   }
-  .contenedor-pagina .header .header-switch {
-    -ms-grid-column: 3;
+  .contenedor-pagina .header .header-logo {
+    -ms-grid-column: 1;
     -ms-grid-column-span: 1;
-    grid-column: 3/ span 1;
+    grid-column: 1/2;
   }
   .contenedor-pagina .header .header-search {
-    margin: 0px 26px 0px 0px;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
   }
   .contenedor-pagina .header .header-search input, .contenedor-pagina .header .header-search .login .login-main fieldset a button, .login .login-main fieldset a .contenedor-pagina .header .header-search button {
     display: none;
@@ -1259,6 +1261,9 @@ body.menu .aside li a span {
     border: none;
   }
   .contenedor-pagina .header .header-switch {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-column: 3/4;
     background: #00a1f8;
     border-radius: 50px;
     border: none;
@@ -1300,7 +1305,20 @@ body.menu .aside li a span {
     background-position-x: 4px;
     border: #094977 solid 2px;
   }
+  .contenedor-pagina .header .ayuda {
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 1;
+    grid-column: 4/5;
+  }
+  .contenedor-pagina .header .notificaciones {
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 1;
+    grid-column: 5/6;
+  }
   .contenedor-pagina .header .perfil {
+    -ms-grid-column: 6;
+    -ms-grid-column-span: 1;
+    grid-column: 6/7;
     border-radius: 50px;
     height: 20px;
     width: 50px;
