@@ -185,7 +185,7 @@
         margin: 12px;
         .p3-contenedor {
           border-radius: 5px;
-          border: 7px solid #242424;
+          border: 5px solid #242424;
           width: $size-box-inside;
           background: linear-gradient(145deg, #ffffff, #e6e6e6);
           box-shadow: 5px 5px 4px #666666, -5px -5px 4px #ffffff;
@@ -216,7 +216,7 @@
           }
           .p3-box {
             .p3-categoria {
-              transform: translate(-2%, -90%);
+              transform: translate(0%, -100%);
             }
             .p3-imagen {
               img {
