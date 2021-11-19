@@ -859,10 +859,10 @@ body.menu .aside li a span {
 .p3 .p3-grid .p3-contenedor .p3-box .p3-categoria {
   background: #000000cc;
   width: 236px;
-  height: 70px;
+  height: 100px;
   text-align: center;
-  -webkit-transform: translate(-2%, -33%);
-          transform: translate(-2%, -33%);
+  -webkit-transform: translate(-2%, -22%);
+          transform: translate(-2%, -22%);
   will-change: transform;
   -webkit-transition-property: -webkit-transform;
   transition-property: -webkit-transform;
@@ -902,8 +902,8 @@ body.menu .aside li a span {
 }
 
 .p3 .p3-grid .p3-contenedor:hover .p3-box .p3-categoria {
-  -webkit-transform: translate(-2%, -100%);
-          transform: translate(-2%, -100%);
+  -webkit-transform: translate(-2%, -90%);
+          transform: translate(-2%, -90%);
 }
 
 .p3 .p3-grid .p3-contenedor:hover .p3-box .p3-imagen img {
@@ -1235,6 +1235,12 @@ body.menu .aside li a span {
   }
   .contenedor-pagina .header div {
     height: 26px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     margin: 0px 10px 0px 10px;
   }
   .contenedor-pagina .header div svg {
@@ -1255,8 +1261,6 @@ body.menu .aside li a span {
     display: none;
   }
   .contenedor-pagina .header .header-search button {
-    position: absolute;
-    height: 26px;
     background: none;
     border: none;
   }
@@ -1277,7 +1281,7 @@ body.menu .aside li a span {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     width: 40px;
-    margin: 3px 10px 0px 10px;
+    margin: auto;
   }
   .contenedor-pagina .header .header-switch::after {
     content: "";
@@ -1305,6 +1309,14 @@ body.menu .aside li a span {
     background-position-x: 4px;
     border: #094977 solid 2px;
   }
+  .contenedor-pagina .header .header-switch::after {
+    -webkit-transform: translate(50%, -20%);
+            transform: translate(50%, -20%);
+  }
+  .contenedor-pagina .header .header-switch.active::after {
+    -webkit-transform: translate(-50%, -20%);
+            transform: translate(-50%, -20%);
+  }
   .contenedor-pagina .header .ayuda {
     -ms-grid-column: 4;
     -ms-grid-column-span: 1;
@@ -1330,7 +1342,11 @@ body.menu .aside li a span {
     background: #094977 url(svg/expand_more_black_24dp.svg) no-repeat;
     background-position-x: 26px;
     background-position-y: -1px;
-    margin: 3px 20px 0px 10px;
+    margin: auto;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: subgrid;
+        grid-template-columns: subgrid;
   }
   .contenedor-pagina .header .perfil::after {
     content: "El";
@@ -1355,10 +1371,14 @@ body.menu .aside li a span {
   .contenedor-pagina .header .perfil.active .header-menu-desplegable {
     display: block;
   }
+  .contenedor-pagina .header .perfil::after {
+    -webkit-transform: translate(-50%, -10%);
+            transform: translate(-50%, -10%);
+  }
   .contenedor-pagina .header .perfil .header-menu-desplegable {
     display: none;
     position: absolute;
-    margin: 31px 0px 0px -50px;
+    margin: 31px 0px 0px 50px;
     background: white;
     height: 110px;
     width: 150px;
@@ -1469,7 +1489,7 @@ body.menu .aside li a span {
   }
   .contenedor-pagina .p3 .p3-grid .p3-contenedor {
     border-radius: 5px;
-    border: 5px solid #242424;
+    border: 7px solid #242424;
     width: 236px;
     background: linear-gradient(145deg, #ffffff, #e6e6e6);
     -webkit-box-shadow: 5px 5px 4px #666666, -5px -5px 4px #ffffff;
@@ -1478,6 +1498,7 @@ body.menu .aside li a span {
     overflow: hidden;
   }
   .contenedor-pagina .p3 .p3-grid .p3-contenedor .p3-box {
+    margin-top: -10px;
     overflow: hidden;
     width: 236px;
     height: 236px;
@@ -1510,8 +1531,8 @@ body.menu .aside li a span {
     width: 236px;
     height: 70px;
     text-align: center;
-    -webkit-transform: translate(-2%, -33%);
-            transform: translate(-2%, -33%);
+    -webkit-transform: translate(0%, -33%);
+            transform: translate(0%, -33%);
     will-change: transform;
     -webkit-transition-property: -webkit-transform;
     transition-property: -webkit-transform;

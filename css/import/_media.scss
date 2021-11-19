@@ -21,6 +21,8 @@
       background: #fff;
       div {
         height: 26px;
+        display: flex;
+        justify-content: space-evenly;
         //top right bottom left
         margin: 0px 10px 0px 10px;
         svg {
@@ -36,9 +38,7 @@
         input {
           display: none;
         }
-        button {
-          position: absolute;
-          height: 26px;
+        button {       
           background: none;
           border: none;
         }
@@ -48,7 +48,15 @@
         @include switch-left;
         width: 40px;
         //top right bottom left
-        margin: 3px 10px 0px 10px;
+        margin: auto;
+        &::after{
+          transform: translate(50%, -20%);
+        }
+        &.active{
+         &::after{
+           transform: translate(-50%, -20%);
+         }   
+        }
       }
       .ayuda{
         grid-column:4/5;
@@ -60,12 +68,17 @@
         grid-column: 6/7;
         @include switch-right;
         //top right bottom left
-        margin: 3px 20px 0px 10px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: subgrid;
+        &::after{
+          transform: translate(-50%, -10%);
+        }
         .header-menu-desplegable {
           display: none;
           position: absolute;
           //top right bottom left
-          margin: 31px 0px 0px -50px;
+          margin: 31px 0px 0px 50px;
           background: rgb(255, 255, 255);
           height: 110px;
           width: 150px;
@@ -172,13 +185,14 @@
         margin: 12px;
         .p3-contenedor {
           border-radius: 5px;
-          border: 5px solid #242424;
+          border: 7px solid #242424;
           width: $size-box-inside;
           background: linear-gradient(145deg, #ffffff, #e6e6e6);
           box-shadow: 5px 5px 4px #666666, -5px -5px 4px #ffffff;
           display: inline-block;
           overflow: hidden;
           .p3-box {
+            margin-top: -10px ;
             overflow: hidden;
             width: $size-box-inside;
             height: $size-box-inside;
@@ -196,7 +210,7 @@
               width: $size-box-inside;
               height: 70px;
               text-align: center;
-              transform: translate(-2%, -33%);
+              transform: translate(0%, -33%);
               @include time;
             }
           }

@@ -32,9 +32,9 @@
         .p3-categoria {
           background: #000000cc;
           width: $size-box-inside;
-          height: 70px;
+          height: 100px;
           text-align: center;
-          transform: translate(-2%, -33%);
+          transform: translate(-2%, -22%);
           @include time;
           span {
             h2 {
@@ -61,7 +61,7 @@
       &:hover {
         .p3-box {
           .p3-categoria {
-            transform: translate(-2%, -100%);
+            transform: translate(-2%, -90%);
           }
           .p3-imagen {
             img {
