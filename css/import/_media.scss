@@ -68,9 +68,12 @@
         grid-column: 6/7;
         @include switch-right;
         //top right bottom left
+        width: 40px;
         margin: auto;
         display: grid;
         grid-template-columns: subgrid;
+        background-position-x: 15px;
+        background-position-y: -2px;
         &::after{
           transform: translate(-50%, -10%);
         }
@@ -192,7 +195,6 @@
           display: inline-block;
           overflow: hidden;
           .p3-box {
-            margin-top: -10px ;
             overflow: hidden;
             width: $size-box-inside;
             height: $size-box-inside;
@@ -210,21 +212,11 @@
               width: $size-box-inside;
               height: 70px;
               text-align: center;
-              transform: translate(0%, -33%);
+              transform: translate(0%, -100%);
               @include time;
             }
           }
-          .p3-box {
-            .p3-categoria {
-              transform: translate(0%, -100%);
-            }
-            .p3-imagen {
-              img {
-                will-change: transform;
-                transform: scale(1);
-              }
-            }
-          }
+
         }
       }
     }

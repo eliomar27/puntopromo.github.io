@@ -859,10 +859,10 @@ body.menu .aside li a span {
 .p3 .p3-grid .p3-contenedor .p3-box .p3-categoria {
   background: #000000cc;
   width: 236px;
-  height: 100px;
+  height: 70px;
   text-align: center;
-  -webkit-transform: translate(-2%, -22%);
-          transform: translate(-2%, -22%);
+  -webkit-transform: translate(0%, -35%);
+          transform: translate(0%, -35%);
   will-change: transform;
   -webkit-transition-property: -webkit-transform;
   transition-property: -webkit-transform;
@@ -902,8 +902,8 @@ body.menu .aside li a span {
 }
 
 .p3 .p3-grid .p3-contenedor:hover .p3-box .p3-categoria {
-  -webkit-transform: translate(-2%, -90%);
-          transform: translate(-2%, -90%);
+  -webkit-transform: translate(0%, -100%);
+          transform: translate(0%, -100%);
 }
 
 .p3 .p3-grid .p3-contenedor:hover .p3-box .p3-imagen img {
@@ -1342,11 +1342,14 @@ body.menu .aside li a span {
     background: #094977 url(svg/expand_more_black_24dp.svg) no-repeat;
     background-position-x: 26px;
     background-position-y: -1px;
+    width: 40px;
     margin: auto;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: subgrid;
         grid-template-columns: subgrid;
+    background-position-x: 15px;
+    background-position-y: -2px;
   }
   .contenedor-pagina .header .perfil::after {
     content: "El";
@@ -1498,7 +1501,6 @@ body.menu .aside li a span {
     overflow: hidden;
   }
   .contenedor-pagina .p3 .p3-grid .p3-contenedor .p3-box {
-    margin-top: -10px;
     overflow: hidden;
     width: 236px;
     height: 236px;
@@ -1531,8 +1533,8 @@ body.menu .aside li a span {
     width: 236px;
     height: 70px;
     text-align: center;
-    -webkit-transform: translate(0%, -33%);
-            transform: translate(0%, -33%);
+    -webkit-transform: translate(0%, -100%);
+            transform: translate(0%, -100%);
     will-change: transform;
     -webkit-transition-property: -webkit-transform;
     transition-property: -webkit-transform;
@@ -1548,15 +1550,6 @@ body.menu .aside li a span {
             transition-delay: 2s;
     -webkit-transition: 0.2s;
     transition: 0.2s;
-  }
-  .contenedor-pagina .p3 .p3-grid .p3-contenedor .p3-box .p3-categoria {
-    -webkit-transform: translate(0%, -100%);
-            transform: translate(0%, -100%);
-  }
-  .contenedor-pagina .p3 .p3-grid .p3-contenedor .p3-box .p3-imagen img {
-    will-change: transform;
-    -webkit-transform: scale(1);
-            transform: scale(1);
   }
   .contenedor-pagina .opacar {
     display: none;
