@@ -7,6 +7,8 @@
   position: fixed;
   background: #ffffff;
   .header-menu {
+    height: 42px;
+    border-bottom:#000000  solid 2px ;
     svg {
       margin: 0 auto;
       height: 42px;
@@ -15,12 +17,6 @@
     span {
       display: none;
     }
-  }
-  .header-line {
-    margin-top: -2px;
-    border-top: rgb(0, 0, 0) solid 2px;
-    box-sizing: border-box;
-    width: 100%;
   }
   li {
     display: flex;

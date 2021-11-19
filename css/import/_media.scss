@@ -1,18 +1,16 @@
-@media screen and (max-width: 500px) {
-  *{
-    max-width: 500px;
-  }
+@media screen and (max-width: 800px) {
   .contenedor-pagina {
+    min-height: 320px;
     display: grid;
     grid-template-areas:
       "header header header"
       "main main main"
       "aside aside aside";
     .header {
-      max-width: 500px;
+      width: 100%;
       grid-area: header;
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns:repeat(6 , 1fr);
       border-bottom: none;
       border-left: none;
       align-items: center;
@@ -30,12 +28,9 @@
           width: 26px;
         }
       }
-      .header-end {
-        display: flex;
-        justify-content: end;
-        margin-right: 100px;
+      .header-switch{
+        grid-column: 3/ span 1;
       }
-
       .header-search {
         //top right bottom left
         margin: 0px 26px 0px 0px;
@@ -84,24 +79,20 @@
     }
 
     .aside {
-      max-width: 500px;
       grid-area: aside;
       border-right: transparent solid 2px;
-      border-top: none;
+      border-top: 0;
       box-sizing: border-box;
       height: 42px;
       width: 100%;
       display: grid;
-      grid-template-columns: repeat(7, 1fr);
+      grid-template-columns:repeat(7, 1fr);
       position: fixed;
       bottom: 0px;
       right: 0px;
       z-index: 99;
-      //   background: #ffffff;
+         background: #ffffff;
       .header-menu {
-        display: none;
-      }
-      .header-line {
         display: none;
       }
       li {
@@ -159,7 +150,7 @@
         display: none;
         position: fixed;
         bottom: 60px;
-        right: 0px;
+        right: -18px;
       }
     }
     .p3 {

@@ -9,6 +9,7 @@
 }
 
 .contenedor-pagina .main {
+  min-width: 320;
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2 / span 1;
@@ -345,8 +346,8 @@ footer ol li {
   grid-column: 2 / span 1;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 170px 180px 1fr;
-      grid-template-columns: 170px 180px 1fr;
+  -ms-grid-columns: 170px 180px auto 42px 42px 42px auto;
+      grid-template-columns: 170px 180px auto 42px 42px 42px auto;
   border-bottom: #000000 solid 2px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -370,16 +371,6 @@ footer ol li {
   width: 26px;
 }
 
-.header .header-end {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
-  margin-right: 100px;
-}
-
 .header .header-search {
   margin: 0px 26px 0px 0px;
 }
@@ -395,6 +386,9 @@ footer ol li {
 }
 
 .header .header-switch {
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-column: 4/ span 1;
   background: #00a1f8;
   border-radius: 50px;
   border: none;
@@ -521,6 +515,11 @@ footer ol li {
   background: #ffffff;
 }
 
+.aside .header-menu {
+  height: 42px;
+  border-bottom: #000000  solid 2px;
+}
+
 .aside .header-menu svg {
   margin: 0 auto;
   height: 42px;
@@ -529,14 +528,6 @@ footer ol li {
 
 .aside .header-menu span {
   display: none;
-}
-
-.aside .header-line {
-  margin-top: -2px;
-  border-top: black solid 2px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  width: 100%;
 }
 
 .aside li {
@@ -608,7 +599,6 @@ body.menu .aside li a span {
 }
 
 .articulos-main .secciones-main {
-  max-width: 252px;
   margin: 15px 15px 15px 15px;
   border-radius: 10px;
   padding: 5px;
@@ -1066,8 +1056,6 @@ body.menu .aside li a span {
      object-fit: cover;
   height: 100%;
   width: 100%;
-  max-height: 300px;
-  max-width: 500px;
 }
 
 .a1 .a1-footer {
@@ -1217,25 +1205,23 @@ body.menu .aside li a span {
   bottom: 70px;
 }
 
-@media screen and (max-width: 500px) {
-  * {
-    max-width: 500px;
-  }
+@media screen and (max-width: 800px) {
   .contenedor-pagina {
+    min-height: 320px;
     display: -ms-grid;
     display: grid;
         grid-template-areas: "header header header" "main main main" "aside aside aside";
   }
   .contenedor-pagina .header {
-    max-width: 500px;
+    width: 100%;
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     -ms-grid-column-span: 3;
     grid-area: header;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-columns: (1fr)[6];
+        grid-template-columns: repeat(6, 1fr);
     border-bottom: none;
     border-left: none;
     -webkit-box-align: center;
@@ -1255,14 +1241,10 @@ body.menu .aside li a span {
     height: 26px;
     width: 26px;
   }
-  .contenedor-pagina .header .header-end {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: end;
-    margin-right: 100px;
+  .contenedor-pagina .header .header-switch {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-column: 3/ span 1;
   }
   .contenedor-pagina .header .header-search {
     margin: 0px 26px 0px 0px;
@@ -1378,13 +1360,12 @@ body.menu .aside li a span {
     font-size: 1.25em;
   }
   .contenedor-pagina .aside {
-    max-width: 500px;
     -ms-grid-row: 3;
     -ms-grid-column: 1;
     -ms-grid-column-span: 3;
     grid-area: aside;
     border-right: transparent solid 2px;
-    border-top: none;
+    border-top: 0;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     height: 42px;
@@ -1397,11 +1378,9 @@ body.menu .aside li a span {
     bottom: 0px;
     right: 0px;
     z-index: 99;
+    background: #ffffff;
   }
   .contenedor-pagina .aside .header-menu {
-    display: none;
-  }
-  .contenedor-pagina .aside .header-line {
     display: none;
   }
   .contenedor-pagina .aside li a svg {
@@ -1454,7 +1433,7 @@ body.menu .aside li a span {
     display: none;
     position: fixed;
     bottom: 60px;
-    right: 0px;
+    right: -18px;
   }
   .contenedor-pagina .p3 {
     display: -ms-grid;
@@ -1581,7 +1560,6 @@ html body header .menu {
 }
 
 html body header .menu div {
-  max-width: 2000px;
   width: 90%;
   margin: auto;
   height: 5%;
@@ -1679,7 +1657,6 @@ html body .imagen img {
 }
 
 .footer .menu div {
-  max-width: 2000px;
   width: 90%;
   margin: auto;
   height: 5%;

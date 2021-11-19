@@ -1,7 +1,7 @@
 .header {
   grid-column: 2 / span 1;
   display:grid;
-  grid-template-columns: 170px 180px 1fr;
+  grid-template-columns: 170px 180px auto 42px 42px 42px auto;
   border-bottom: #000000 solid 2px;
   align-items: center;
   height: 42px;
@@ -19,12 +19,6 @@
       width: 26px;
     }
   }
-  .header-end {
-   display: flex;
-   justify-content: end;
-   margin-right:100px;
-  }
-
   .header-search {
     //top right bottom left
     margin: 0px 26px 0px 0px;
@@ -38,6 +32,7 @@
     }
   }
   .header-switch {
+    grid-column: 4/ span 1;
     @include switch-left;
     width: 40px;
     //top right bottom left
