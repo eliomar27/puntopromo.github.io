@@ -6,7 +6,6 @@
       grid-template-columns: 42px auto;
   -ms-grid-rows: 42px auto;
       grid-template-rows: 42px auto;
-  min-width: 500px;
 }
 
 .contenedor-pagina .main {
@@ -1219,6 +1218,9 @@ body.menu .aside li a span {
 }
 
 @media screen and (max-width: 500px) {
+  * {
+    max-width: 500px;
+  }
   .contenedor-pagina {
     display: -ms-grid;
     display: grid;

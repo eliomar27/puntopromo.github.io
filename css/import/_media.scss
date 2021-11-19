@@ -1,4 +1,7 @@
 @media screen and (max-width: 500px) {
+  *{
+    max-width: 500px;
+  }
   .contenedor-pagina {
     display: grid;
     grid-template-areas:
