@@ -6,13 +6,14 @@
       grid-template-columns: 42px auto;
   -ms-grid-rows: 42px auto;
       grid-template-rows: 42px auto;
+  min-width: 320px;
 }
 
 .contenedor-pagina .main {
   min-width: 320;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2 / span 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / span 2;
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2 / span 1;
@@ -20,11 +21,13 @@
 
 .contenedor-pagina .main .opacar {
   position: fixed;
+  z-index: 900;
   top: 42px;
   left: 44px;
   width: 100%;
   height: 100%;
   background: #000000b4;
+  border: none;
   display: none;
 }
 
@@ -37,12 +40,16 @@ body.menu .contenedor-pagina .main .opacar {
   display: grid;
   -ms-grid-columns: (1fr)[12];
       grid-template-columns: repeat(12, 1fr);
+  position: absolute;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/ span 2;
 }
 
 a {
   -webkit-text-decoration-line: none;
           text-decoration-line: none;
-  color: #000;
+  color: #000000;
 }
 
 * {
@@ -348,7 +355,7 @@ footer ol li {
   display: grid;
   -ms-grid-columns: 170px 180px auto 42px 42px 42px auto;
       grid-template-columns: 170px 180px auto 42px 42px 42px auto;
-  border-bottom: #000000 solid 2px;
+  border-bottom: #000000 solid 1px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -358,7 +365,6 @@ footer ol li {
   position: -webkit-sticky;
   position: sticky;
   background: #fff;
-  border-left: #000000 solid 2px;
 }
 
 .header div {
@@ -431,7 +437,7 @@ footer ol li {
   -webkit-transform: translate(45%, -20%);
           transform: translate(45%, -20%);
   background-position-x: 4px;
-  border: #094977 solid 2px;
+  border: #d15d0f solid 2px;
 }
 
 .header .perfil {
@@ -443,7 +449,7 @@ footer ol li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: #094977 url(svg/expand_more_black_24dp.svg) no-repeat;
+  background: #00a1f8 url(svg/expand_more_black_24dp.svg) no-repeat;
   background-position-x: 26px;
   background-position-y: -1px;
   margin: 3px 20px 0px 10px;
@@ -451,9 +457,9 @@ footer ol li {
 
 .header .perfil::after {
   content: "El";
-  color: #ffffff;
+  color: #000000;
   text-align: center;
-  background: #010041;
+  background: #ffffff;
   font-size: 20px;
   display: block;
   width: 25px;
@@ -467,7 +473,7 @@ footer ol li {
   transition: 0.3 ease-out all;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border: #02007e solid 1px;
+  border: #004b74 solid 1px;
 }
 
 .header .perfil.active .header-menu-desplegable {
@@ -507,17 +513,18 @@ footer ol li {
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
   grid-row: 1 / span 2;
-  border-right: #000000 solid 2px;
+  border-right: #000000 solid 1px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   height: 100%;
   position: fixed;
   background: #ffffff;
+  z-index: 1000;
 }
 
 .aside .header-menu {
   height: 42px;
-  border-bottom: #000000  solid 2px;
+  border-bottom: #000000  solid 1px;
 }
 
 .aside .header-menu svg {
@@ -817,7 +824,6 @@ body.menu .aside li a span {
 
 .p3 .p3-grid .p3-contenedor {
   border-radius: 5px;
-  border: 5px solid #242424;
   width: 236px;
   background: linear-gradient(145deg, #ffffff, #e6e6e6);
   -webkit-box-shadow: 5px 5px 4px #666666, -5px -5px 4px #ffffff;
@@ -859,10 +865,10 @@ body.menu .aside li a span {
 .p3 .p3-grid .p3-contenedor .p3-box .p3-categoria {
   background: #000000cc;
   width: 236px;
-  height: 70px;
+  height: 110px;
   text-align: center;
-  -webkit-transform: translate(0%, -35%);
-          transform: translate(0%, -35%);
+  -webkit-transform: translate(0%, -45%);
+          transform: translate(0%, -45%);
   will-change: transform;
   -webkit-transition-property: -webkit-transform;
   transition-property: -webkit-transform;
@@ -886,6 +892,7 @@ body.menu .aside li a span {
   font-size: 1em;
   position: relative;
   font-weight: bolder;
+  padding-bottom: 1.7em;
 }
 
 .p3 .p3-grid .p3-contenedor .p3-box .p3-categoria span a {
@@ -1063,6 +1070,10 @@ body.menu .aside li a span {
   font-size: 1.75em;
 }
 
+.a2 {
+  margin-left: 42px;
+}
+
 .a2 .a2-portada {
   -ms-grid-columns: subgrid;
       grid-template-columns: subgrid;
@@ -1076,6 +1087,7 @@ body.menu .aside li a span {
   display: -ms-grid;
   display: grid;
   height: 400px;
+  overflow: hidden;
 }
 
 .a2 .a2-portada picture {
@@ -1098,7 +1110,7 @@ body.menu .aside li a span {
   -ms-grid-column: 1;
   -ms-grid-column-span: 12;
   grid-column: 1 / span 12;
-  width: 900px;
+  width: 100%;
   margin: auto;
   border-radius: 30px;
   margin-top: 50px;
@@ -1108,7 +1120,7 @@ body.menu .aside li a span {
   z-index: 2;
   text-shadow: 4px 4px 3px #000000;
   text-align: center;
-  font-size: 8em;
+  font-size: 400%;
   color: #fff;
   margin: 0;
 }
@@ -1121,7 +1133,7 @@ body.menu .aside li a span {
   -ms-grid-column-span: 12;
   grid-column: 1 / span 12;
   text-align: center;
-  font-size: 4em;
+  font-size: 200%;
   color: #f8f8f8;
 }
 
@@ -1307,7 +1319,7 @@ body.menu .aside li a span {
     -webkit-transform: translate(45%, -20%);
             transform: translate(45%, -20%);
     background-position-x: 4px;
-    border: #094977 solid 2px;
+    border: #d15d0f solid 2px;
   }
   .contenedor-pagina .header .header-switch::after {
     -webkit-transform: translate(50%, -20%);
@@ -1339,7 +1351,7 @@ body.menu .aside li a span {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    background: #094977 url(svg/expand_more_black_24dp.svg) no-repeat;
+    background: #00a1f8 url(svg/expand_more_black_24dp.svg) no-repeat;
     background-position-x: 26px;
     background-position-y: -1px;
     width: 40px;
@@ -1353,9 +1365,9 @@ body.menu .aside li a span {
   }
   .contenedor-pagina .header .perfil::after {
     content: "El";
-    color: #ffffff;
+    color: #000000;
     text-align: center;
-    background: #010041;
+    background: #ffffff;
     font-size: 20px;
     display: block;
     width: 25px;
@@ -1369,7 +1381,7 @@ body.menu .aside li a span {
     transition: 0.3 ease-out all;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    border: #02007e solid 1px;
+    border: #004b74 solid 1px;
   }
   .contenedor-pagina .header .perfil.active .header-menu-desplegable {
     display: block;
@@ -1486,79 +1498,16 @@ body.menu .aside li a span {
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
   }
-  .contenedor-pagina .p3 .p3-grid {
-    width: 252px;
-    margin: 12px;
-  }
-  .contenedor-pagina .p3 .p3-grid .p3-contenedor {
-    border-radius: 5px;
-    border: 5px solid #242424;
-    width: 236px;
-    background: linear-gradient(145deg, #ffffff, #e6e6e6);
-    -webkit-box-shadow: 5px 5px 4px #666666, -5px -5px 4px #ffffff;
-            box-shadow: 5px 5px 4px #666666, -5px -5px 4px #ffffff;
-    display: inline-block;
-    overflow: hidden;
-  }
-  .contenedor-pagina .p3 .p3-grid .p3-contenedor .p3-box {
-    overflow: hidden;
-    width: 236px;
-    height: 236px;
-  }
-  .contenedor-pagina .p3 .p3-grid .p3-contenedor .p3-box picture img {
-    width: 100%;
-    height: 100%;
-    -o-object-fit: fill;
-       object-fit: fill;
-    will-change: transform;
-    -webkit-transition-property: -webkit-transform;
-    transition-property: -webkit-transform;
-    transition-property: transform;
-    transition-property: transform, -webkit-transform;
-    -webkit-transition-duration: 2s;
-            transition-duration: 2s;
-    -webkit-transition: -webkit-transform 2s cubic-bezier(0.07, 0.99, 0.74, -1.13);
-    transition: -webkit-transform 2s cubic-bezier(0.07, 0.99, 0.74, -1.13);
-    transition: transform 2s cubic-bezier(0.07, 0.99, 0.74, -1.13);
-    transition: transform 2s cubic-bezier(0.07, 0.99, 0.74, -1.13), -webkit-transform 2s cubic-bezier(0.07, 0.99, 0.74, -1.13);
-    -webkit-transition-delay: 2s;
-            transition-delay: 2s;
-    -webkit-transition: 0.2s;
-    transition: 0.2s;
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
+  .contenedor-pagina .p3 .p3-grid .p3-contenedor .p3-box .p3-imagen img {
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
   .contenedor-pagina .p3 .p3-grid .p3-contenedor .p3-box .p3-categoria {
-    background: #000000cc;
-    width: 236px;
-    height: 70px;
-    text-align: center;
     -webkit-transform: translate(0%, -100%);
             transform: translate(0%, -100%);
-    will-change: transform;
-    -webkit-transition-property: -webkit-transform;
-    transition-property: -webkit-transform;
-    transition-property: transform;
-    transition-property: transform, -webkit-transform;
-    -webkit-transition-duration: 2s;
-            transition-duration: 2s;
-    -webkit-transition: -webkit-transform 2s cubic-bezier(0.07, 0.99, 0.74, -1.13);
-    transition: -webkit-transform 2s cubic-bezier(0.07, 0.99, 0.74, -1.13);
-    transition: transform 2s cubic-bezier(0.07, 0.99, 0.74, -1.13);
-    transition: transform 2s cubic-bezier(0.07, 0.99, 0.74, -1.13), -webkit-transform 2s cubic-bezier(0.07, 0.99, 0.74, -1.13);
-    -webkit-transition-delay: 2s;
-            transition-delay: 2s;
-    -webkit-transition: 0.2s;
-    transition: 0.2s;
   }
-  .contenedor-pagina .opacar {
-    display: none;
-  }
-  .contenedor-pagina .a {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (1fr)[12];
-        grid-template-columns: repeat(12, 1fr);
+  .a2 {
+    margin-left: 0;
   }
 }
 

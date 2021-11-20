@@ -10,7 +10,6 @@
     margin: 12px;
     .p3-contenedor {
       border-radius: 5px;
-      border: 5px solid #242424;
       width: $size-box-inside;
       background: linear-gradient(145deg, #ffffff, #e6e6e6);
       box-shadow: 5px 5px 4px #666666, -5px -5px 4px #ffffff;
@@ -32,9 +31,9 @@
         .p3-categoria {
           background: #000000cc;
           width: $size-box-inside;
-          height: 70px;
+          height: 110px;
           text-align: center;
-          transform: translate(0%, -35%);
+          transform: translate(0%, -45%);
           @include time;
           span {
             h2 {
@@ -43,6 +42,7 @@
               font-size: 1em;
               position: relative;
               font-weight:bolder;
+              padding-bottom: 1.7em;
             }
             a {
               color: #e6e6e6;

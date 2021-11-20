@@ -46,7 +46,7 @@
       background: #010041 url(svg/moon.svg) no-repeat 50%;
       transform: translate(45%, -20%);
       background-position-x: 4px;
-      border: #094977 solid 2px;
+      border: #d15d0f solid 2px;
     }
   }
 }
@@ -57,14 +57,14 @@
   position: relative;
   cursor: pointer;
   display: flex;
-  background: #094977 url(svg/expand_more_black_24dp.svg) no-repeat;
+  background: #00a1f8 url(svg/expand_more_black_24dp.svg) no-repeat;
   background-position-x: 26px;
   background-position-y: -1px;
   &::after {
     content: "El";
-    color: #ffffff;
+    color: #000000;
     text-align: center;
-    background: #010041;
+    background: #ffffff;
     font-size: 20px;
     display: block;
     width: 25px;
@@ -75,7 +75,7 @@
     border-radius: 50px;
     transition: 0.3 ease-out all;
     box-sizing: border-box;
-    border: #02007e solid 1px;
+    border: #004b74 solid 1px;
   }
   &.active {
     .header-menu-desplegable {

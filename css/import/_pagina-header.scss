@@ -2,14 +2,13 @@
   grid-column: 2 / span 1;
   display:grid;
   grid-template-columns: 170px 180px auto 42px 42px 42px auto;
-  border-bottom: #000000 solid 2px;
+  border-bottom: #000000 solid 1px;
   align-items: center;
   height: 42px;
   z-index: 999;
   top: 0;
   position: sticky;
   background: #fff;
-  border-left: #000000 solid 2px;
   div {
     height: 26px;
     //top right bottom left

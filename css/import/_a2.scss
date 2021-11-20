@@ -1,4 +1,5 @@
 .a2 {
+  margin-left: 42px;
   .a2-portada {
     grid-template-columns: subgrid;
    // background: #ffcc00;
@@ -8,6 +9,7 @@
     @include fondo;
     display: grid;
     height: 400px;
+    overflow: hidden;
     picture{
       z-index: 1;
       position: absolute;
@@ -24,7 +26,7 @@
     .a2-portada-texto{
       z-index: 10;
       grid-column: 1 / span 12;
-      width: 900px;
+      width: 100%;
       margin: auto;
       border-radius: 30px;
       margin-top: 50px;
@@ -32,7 +34,7 @@
         z-index: 2;
         text-shadow: 4px 4px 3px #000000;
         text-align: center;
-        font-size:8em;
+        font-size:400%;
         color: #fff;
         margin: 0;
       }
@@ -42,7 +44,7 @@
         text-shadow: 4px 4px 3px #040404;
         grid-column: 1 / span 12;
         text-align: center;
-        font-size:4em;
+        font-size:200%;
         color: rgb(248, 248, 248);
       }
     }
