@@ -1143,6 +1143,7 @@ body.menu .aside li a span {
   display: grid;
   -ms-grid-columns: subgrid;
       grid-template-columns: subgrid;
+  padding: 20px;
 }
 
 .a2 .a2-article .a2-titulo {
@@ -1167,10 +1168,30 @@ body.menu .aside li a span {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: justify;
+  padding: 10px;
 }
 
 .a2 .a2-article .a2-imagen {
   grid-column: span 4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.a2 .a2-article .a2-imagen picture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  width: 100%;
 }
 
 .a2 .a2-article .a2-imagen picture img {
@@ -1508,6 +1529,27 @@ body.menu .aside li a span {
   }
   .a2 {
     margin-left: 0;
+  }
+  .a2 .a2-article div:nth-child(4) {
+    -ms-grid-row: 5;
+    -ms-grid-row-span: 1;
+    grid-row: 5/span 1;
+  }
+  .a2 .a2-article div:nth-child(8) {
+    -ms-grid-row: 9;
+    -ms-grid-row-span: 1;
+    grid-row: 9/span 1;
+  }
+  .a2 .a2-article .a2-titulo h2, .a2 .a2-article .a2-titulo .a1 .a1-portada .a1-portada-texto h3, .a1 .a1-portada .a1-portada-texto .a2 .a2-article .a2-titulo h3 {
+    grid-column: span 12;
+  }
+  .a2 .a2-article .a2-parrafo {
+    grid-column: span 12;
+  }
+  .a2 .a2-article .a2-imagen {
+    grid-column: span 12;
+    width: 95%;
+    margin: auto;
   }
 }
 

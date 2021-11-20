@@ -54,6 +54,7 @@
     grid-column: span 12;
     display: grid;
     grid-template-columns: subgrid;
+    padding: 20px;
     .a2-titulo {
       grid-column: span 12;
       display: grid;
@@ -68,13 +69,22 @@
       grid-column: span 8;
       display: flex;
       align-items: center;
+      text-align: justify;
+      padding: 10px;
         p{
 
         }
     }
     .a2-imagen{
       grid-column: span 4;
+      display: flex;
+      align-items: center;
+      height: 100%;
         picture{
+          display: flex;
+          align-items: center;
+          height: 100%;
+          width: 100%;
             img{
                 width: 100%;
                 height: 100%;

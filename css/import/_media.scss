@@ -38,7 +38,7 @@
         input {
           display: none;
         }
-        button {       
+        button {
           background: none;
           border: none;
         }
@@ -49,19 +49,19 @@
         width: 40px;
         //top right bottom left
         margin: auto;
-        &::after{
+        &::after {
           transform: translate(50%, -20%);
         }
-        &.active{
-         &::after{
-           transform: translate(-50%, -20%);
-         }   
+        &.active {
+          &::after {
+            transform: translate(-50%, -20%);
+          }
         }
       }
-      .ayuda{
-        grid-column:4/5;
+      .ayuda {
+        grid-column: 4/5;
       }
-      .notificaciones{
+      .notificaciones {
         grid-column: 5/6;
       }
       .perfil {
@@ -74,7 +74,7 @@
         grid-template-columns: subgrid;
         background-position-x: 15px;
         background-position-y: -2px;
-        &::after{
+        &::after {
           transform: translate(-50%, -10%);
         }
         .header-menu-desplegable {
@@ -99,7 +99,7 @@
           }
         }
       }
-    } 
+    }
     .aside {
       grid-area: aside;
       border-right: transparent solid 2px;
@@ -185,8 +185,8 @@
       .p3-grid {
         .p3-contenedor {
           .p3-box {
-            .p3-imagen{
-              img{
+            .p3-imagen {
+              img {
                 transform: scale(1);
               }
             }
@@ -198,7 +198,31 @@
       }
     }
   }
-  .a2{
+  .a2 {
     margin-left: 0;
+
+    .a2-article {
+      div{
+        &:nth-child(4){
+          grid-row:5/span 1 ;
+        }
+        &:nth-child(8){
+          grid-row:9/span 1 ;
+        }
+      }
+      .a2-titulo{
+        h2{
+          grid-column: span 12;
+        }
+      }
+      .a2-parrafo {
+        grid-column: span 12;
+      }
+      .a2-imagen {
+        grid-column: span 12;
+        width: 95%;
+        margin: auto;
+      }
+    }
   }
 }
