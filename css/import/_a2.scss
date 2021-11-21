@@ -9,11 +9,9 @@
     @include fondo;
     display: grid;
     height: 400px;
-    overflow: hidden;
     picture{
       z-index: 1;
       position: absolute;
-      overflow: hidden;
       height: 400px;
       width: 100%;
       img{

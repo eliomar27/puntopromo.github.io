@@ -1,5 +1,6 @@
 //estilo de los articulos...
 .a1 {
+  
   background: url(img/02.jpg);
   .a1-portada {
     grid-template-columns: subgrid;
@@ -14,7 +15,7 @@
       z-index: 1;
       position: absolute;
       overflow: hidden;
-      height: 500px;
+      height: 400px;
       width: 100%;
       img{
         height: 100%;
@@ -26,31 +27,34 @@
     .a1-portada-texto{
       background: url(img/01.jpg);
       z-index: 10;
-      grid-column: 1 / span 12;
-      width: 900px;
-      margin: auto;
+      grid-column: 2 / span 10;
+      width: 100%;
+      height: 60%;
+      vertical-align: middle;
       border-radius: 30px;
-      margin-top: 50px;
+      margin-top: 100px;
       h1 {
         z-index: 2;
         text-shadow: 4px 4px 3px #000000;
         text-align: center;
-        font-size:9em;
+        font-size:290%;
         color: #fff;
-        margin: 0;
+        margin-top: 40px;
+        margin-bottom: 10px;
       }
       h2 {
-        padding: 20px;
+        margin-top:10px;
         z-index: 2;
         text-shadow: 4px 4px 3px #040404;
         grid-column: 1 / span 12;
         text-align: center;
-        font-size:4em;
+        font-size:200%;
         color: rgb(248, 248, 248);
       }
       h3{
         @extend h2;
-        font-size: 3em;
+        padding: 0px;
+        font-size: 150%;
       }
     }
   
@@ -68,12 +72,12 @@
         //top right bottom left
         margin: 10px 0px 0px 0px;
         text-align: center;
-        font-size:2.5em;
+        font-size:200%;
       }
     }
     .a1-parrafo {
       grid-column: span 8;
-      padding: 40px;
+      padding: 0px 20px 0px 20px;
       display: flex;
       align-items: center;
       p {
@@ -84,12 +88,13 @@
         //top right bottom left
         margin: 20px 0px 0px 0px;
         text-align: justify;
-        font-size:1.75em;
+        font-size:125%;
         vertical-align: 80%;
       }
     }
     .a1-imagen {
       grid-column:span 4;
+      padding: 10px;
       picture{
         img {
           object-fit: cover;
@@ -102,5 +107,17 @@
   .a1-footer{
     grid-column: span 12;
     font-size: 1.75em;
+    background: #ffffff80;
+    ol{
+      li{
+        margin: 10px;
+        span{
+          margin-left: 10px;
+          position: absolute;
+          padding: 0;
+          font-size: 100%;
+        }
+      }
+    }
   }
 }
