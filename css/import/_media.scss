@@ -176,12 +176,6 @@
       }
     }
     .p3 {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, $size-box-outside);
-      grid-auto-rows: $size-box-outside;
-      //top right bottom left
-      justify-content: space-evenly;
-      // grid-template-rows: masonry;
       .p3-grid {
         .p3-contenedor {
           .p3-box {

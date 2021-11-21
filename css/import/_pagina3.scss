@@ -1,24 +1,26 @@
+
 .p3 {
   display: grid;
-  grid-template-columns: repeat(auto-fill, $size-box-outside);
-  grid-auto-rows: $size-box-outside;
+  grid-template-columns: repeat(auto-fill, $box-size1);
+  grid-auto-rows: $box-size1;
   //top right bottom left
   justify-content: space-evenly;
   // grid-template-rows: masonry;
+overflow: hidden;
   .p3-grid {
-    width: $size-box-outside;
+    width: $box-size1;
     margin: 12px;
+    display: inline-block;
     .p3-contenedor {
       border-radius: 5px;
-      width: $size-box-inside;
+      width: $box-size1 - $box-size2;
       background: linear-gradient(145deg, #ffffff, #e6e6e6);
       box-shadow: 5px 5px 4px #666666, -5px -5px 4px #ffffff;
       display: inline-block;
       overflow: hidden;
       .p3-box {
-        overflow: hidden;
-        width: $size-box-inside;
-        height: $size-box-inside;
+        width:  $box-size1 - $box-size2;
+        height:  $box-size1 - $box-size2;
         picture {
           img {
             width: 100%;
@@ -30,7 +32,7 @@
         }
         .p3-categoria {
           background: #000000cc;
-          width: $size-box-inside;
+          width:  $box-size1 - $box-size2;
           height: 110px;
           text-align: center;
           transform: translate(0%, -45%);

@@ -19,12 +19,11 @@ html {
   }
 }
 /*los cambios que van a pasar*/
-$width1: 252px;
-$width2: 12px;
+
 #box {
   min-width: 500px;
   display: grid;
-  grid-template-columns: repeat(auto-fill, $size-box-outside);
+  grid-template-columns: repeat(auto-fill, $width1);
   justify-content: space-evenly;
   //top right bottom left
   margin:12px 0px 0px 12px;

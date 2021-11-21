@@ -1,5 +1,4 @@
 .a2 {
-  margin-left: 42px;
   .a2-portada {
     grid-template-columns: subgrid;
    // background: #ffcc00;
@@ -90,6 +89,23 @@
                 max-height: 300px;
             }
         }
+    }
+  }
+  .a2-footer{
+    grid-column: span 12;
+    font-size: 1em;
+    background: #ffffff80;
+    ol{
+      li{
+        margin: 10px;
+        span{
+          margin-top: 5px;
+          margin-left: 10px;
+          position: absolute;
+          padding: 0;
+          font-size: 100%;
+        }
+      }
     }
   }
 }
