@@ -1,9 +1,3 @@
-/*
-@media screen and (max-width: 800px) {
-
-}
-*/
-
 .index-body {
   height: 100%;
   display: grid;
@@ -15,24 +9,26 @@
     grid-row: span 10;
     width: 100%;
     height: 100%;
-    background: rgb(255, 0, 0);
+    background: #ff0000;
     background: linear-gradient(
       90deg,
-      rgba(255, 0, 0, 1) 13%,
-      rgba(191, 0, 0, 1) 40%,
-      rgba(131, 0, 0, 1) 83%,
-      rgba(0, 0, 0, 1) 100%
+      #ff0000 13%,
+      #bf0000 40%,
+      #830000 83%,
+      #000000 100%
     );
     display: grid;
-    grid-template-columns: subgrid;
-    grid-template-rows: subgrid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(10, 1fr);
     .service-pentagono {
       grid-column: 1 / span 4;
       grid-row: 4 / span 4;
       background: #ffffff;
       margin-left: 20px;
-      border-bottom: red solid 2px;
+      border-bottom: #ff0000 solid 2px;
       border-radius: 5px;
+      height: 250px;
+      min-width: 320px;
       .service {
         .service-contenido {
           .service-titulo {
@@ -45,9 +41,13 @@
             text-align: justify;
           }
           .service-mas {
-            color: black;
+            color: #242424;
             position: relative;
             padding: 20px;
+            &:hover{
+              color: blue;
+              text-decoration-line: underline;
+            }
           }
         }
       }
@@ -78,7 +78,7 @@
         background: #ffffff;
         cursor: pointer;
         &:hover{
-          background: black;
+          background: #000000;
           svg{
             color: #fff;
           }
@@ -93,7 +93,7 @@
         }
       }
       .pentakill{
-        background: black;
+        background: #000000;
         svg{
           color: #fff;
         }
@@ -133,10 +133,12 @@
       flex-direction: column;
       align-items: center;
       grid-column: 2 / span 4;
-      grid-row: 2 / span 4;
+      grid-row: 3 / span 4;
       width: 320px;
-      border-bottom: 2px solid red;
-      height: 100%;
+      position: relative;
+      margin-top: -40px;
+      border-bottom: 2px solid #ff0000;
+      height: 300px;
       background: #ffffff;
       min-height: 318px;
       border-radius: 5px;
@@ -166,13 +168,13 @@
             }
           }
           .adelante {
-            background: #092cdc;
+            background: #000000;
             transition: all 0.6s ease-in-out;
           }
         }
         .atras {
           transform: scale(1.5);
-          box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.2);
+          box-shadow: inset 0 0 3px #00000033;
           transition: all 0.4s ease-in-out 0.2s;
           opacity: 0;
         }
@@ -182,7 +184,7 @@
           transform: scale(0);
         }
         .atras {
-          background: rgb(0, 0, 0);
+          background: #ff0000;
           transform: scale(1);
           opacity: 1;
           pointer-events: auto;
@@ -221,3 +223,9 @@
   grid-row: span 1;
   background: #0059fff8;
 }
+
+@media screen and (max-width: 1050px) {
+body{
+}
+}
+

@@ -141,11 +141,6 @@ html {
   }
 }
 
-/*
-@media screen and (max-width: 800px) {
-
-}
-*/
 .index-body {
   height: 100%;
   display: -ms-grid;
@@ -161,15 +156,15 @@ html {
   grid-row: span 10;
   width: 100%;
   height: 100%;
-  background: red;
-  background: -webkit-gradient(linear, left top, right top, color-stop(13%, red), color-stop(40%, #bf0000), color-stop(83%, #830000), to(black));
-  background: linear-gradient(90deg, red 13%, #bf0000 40%, #830000 83%, black 100%);
+  background: #ff0000;
+  background: -webkit-gradient(linear, left top, right top, color-stop(13%, #ff0000), color-stop(40%, #bf0000), color-stop(83%, #830000), to(#000000));
+  background: linear-gradient(90deg, #ff0000 13%, #bf0000 40%, #830000 83%, #000000 100%);
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: subgrid;
-      grid-template-columns: subgrid;
-  -ms-grid-rows: subgrid;
-      grid-template-rows: subgrid;
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
+  -ms-grid-rows: (1fr)[10];
+      grid-template-rows: repeat(10, 1fr);
 }
 
 .index-body .index-menu .service-pentagono {
@@ -181,8 +176,10 @@ html {
   grid-row: 4 / span 4;
   background: #ffffff;
   margin-left: 20px;
-  border-bottom: red solid 2px;
+  border-bottom: #ff0000 solid 2px;
   border-radius: 5px;
+  height: 250px;
+  min-width: 320px;
 }
 
 .index-body .index-menu .service-pentagono .service .service-contenido .service-titulo {
@@ -197,9 +194,15 @@ html {
 }
 
 .index-body .index-menu .service-pentagono .service .service-contenido .service-mas {
-  color: black;
+  color: #242424;
   position: relative;
   padding: 20px;
+}
+
+.index-body .index-menu .service-pentagono .service .service-contenido .service-mas:hover {
+  color: blue;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
 }
 
 .index-body .index-menu .pentagono-box {
@@ -230,7 +233,7 @@ html {
 }
 
 .index-body .index-menu .pentagono-box .hexagonos:hover {
-  background: black;
+  background: #000000;
 }
 
 .index-body .index-menu .pentagono-box .hexagonos:hover svg {
@@ -247,7 +250,7 @@ html {
 }
 
 .index-body .index-menu .pentagono-box .pentakill {
-  background: black;
+  background: #000000;
 }
 
 .index-body .index-menu .pentagono-box .pentakill svg {
@@ -312,12 +315,14 @@ html {
   -ms-grid-column: 2;
   -ms-grid-column-span: 4;
   grid-column: 2 / span 4;
-  -ms-grid-row: 2;
+  -ms-grid-row: 3;
   -ms-grid-row-span: 4;
-  grid-row: 2 / span 4;
+  grid-row: 3 / span 4;
   width: 320px;
-  border-bottom: 2px solid red;
-  height: 100%;
+  position: relative;
+  margin-top: -40px;
+  border-bottom: 2px solid #ff0000;
+  height: 300px;
   background: #ffffff;
   min-height: 318px;
   border-radius: 5px;
@@ -356,7 +361,7 @@ html {
 }
 
 .index-body .index-login .index-contenedor .box-outside .box-inside .adelante {
-  background: #092cdc;
+  background: #000000;
   -webkit-transition: all 0.6s ease-in-out;
   transition: all 0.6s ease-in-out;
 }
@@ -364,8 +369,8 @@ html {
 .index-body .index-login .index-contenedor .box-outside .atras {
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
-  -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.2);
-          box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: inset 0 0 3px #00000033;
+          box-shadow: inset 0 0 3px #00000033;
   -webkit-transition: all 0.4s ease-in-out 0.2s;
   transition: all 0.4s ease-in-out 0.2s;
   opacity: 0;
@@ -377,7 +382,7 @@ html {
 }
 
 .index-body .index-login .index-contenedor:hover .atras {
-  background: black;
+  background: #ff0000;
   -webkit-transform: scale(1);
           transform: scale(1);
   opacity: 1;
