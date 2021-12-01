@@ -81,13 +81,14 @@
           display: none;
           position: absolute;
           //top right bottom left
-          margin: 31px 0px 0px 50px;
+          margin: 31px 0px 0px -100px;
           background: rgb(255, 255, 255);
           height: 110px;
           width: 150px;
+          border: #000000 solid 1px;
           border-radius: 5px;
           a {
-            padding: 5px;
+            padding: 4px;
             display: grid;
             grid-template-columns: 1fr 2fr;
             span {
@@ -95,6 +96,7 @@
               letter-spacing: 1px;
               font-weight: bolder;
               font-size: 1.25em;
+              margin-left: -15px;
             }
           }
         }

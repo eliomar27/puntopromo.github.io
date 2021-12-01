@@ -13,7 +13,6 @@
   border-radius: 4px;
   transform: rotate(-90deg);
   &:hover {
-    @include time;
     bottom: 70px;
   }
 }

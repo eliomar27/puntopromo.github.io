@@ -23,7 +23,7 @@ overflow: hidden;
         height:  $box-size1 - $box-size2;
         picture {
           img {
-            width: 100%;
+            width: 101%;
             height: 100%;
             object-fit: fill;
             @include time;
@@ -32,7 +32,7 @@ overflow: hidden;
         }
         .p3-categoria {
           background: #000000cc;
-          width:  $box-size1 - $box-size2;
+          width: 101%;
           height: 110px;
           text-align: center;
           transform: translate(0%, -45%);
@@ -67,8 +67,6 @@ overflow: hidden;
           }
           .p3-imagen {
             img {
-              will-change: transform;
-              @include time;
               transform: scale(1);
             }
           }

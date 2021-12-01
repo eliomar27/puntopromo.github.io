@@ -1,11 +1,9 @@
 @import 'import/variables';
+@import "import/mixin";
 @import url(import/normalize.css);
 @import "import/style-general";
-@import "import/mixin";
 @import "import/inicio-menu";
-@import "import/inicio-slider";
-@import "import/inicio-libro";
-@import "import/inicio-footer";
+@import "import/inicio";
 @import "import/login";
 @import "import/pagina-header";
 @import "import/pagina-aside";
@@ -19,6 +17,9 @@
 @import "import/pagina8";
 @import "import/a1";
 @import "import/a2";
+@import "import/a3";
 @import "import/go-to-top";
 @import "import/media";
 @import "import/prueba-box";
+@import "import/dark";
+@import 'import/color/light';
