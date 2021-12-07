@@ -23,7 +23,7 @@
         height: 26px;
         display: flex;
         justify-content: space-evenly;
-        //top right bottom left
+        //*top right bottom left
         margin: 0px 10px 0px 10px;
         svg {
           height: 26px;
@@ -47,7 +47,7 @@
         grid-column: 3/4;
         @include switch-left;
         width: 40px;
-        //top right bottom left
+        //*top right bottom left
         margin: auto;
         &::after {
           transform: translate(50%, -20%);
@@ -67,7 +67,7 @@
       .perfil {
         grid-column: 6/7;
         @include switch-right;
-        //top right bottom left
+        //*top right bottom left
         width: 40px;
         margin: auto;
         display: grid;
@@ -80,7 +80,7 @@
         .header-menu-desplegable {
           display: none;
           position: absolute;
-          //top right bottom left
+          //*top right bottom left
           margin: 31px 0px 0px -100px;
           background: rgb(255, 255, 255);
           height: 110px;
@@ -156,7 +156,7 @@
             svg {
             }
             span {
-              //top right bottom left
+              //*top right bottom left
               margin: -42px 0px 0px 42px;
               padding-top: 7.5px;
               font-size: 1.25em;

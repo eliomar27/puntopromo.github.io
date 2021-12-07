@@ -11,7 +11,7 @@
   background: #fff;
   div {
     height: 42px;
-    //top right bottom left
+    //*top right bottom left
     margin: 0px 10px 0px 10px;
     svg {
       height: 42px;
@@ -19,7 +19,7 @@
     }
   }
   .header-search {
-    //top right bottom left
+    //*top right bottom left
     margin: 0px 26px 0px 0px;
     padding-top: 6px;
     input {
@@ -39,17 +39,17 @@
     grid-column: 4 / span 1;
     @include switch-left;
     width: 40px;
-    //top right bottom left
+    //*top right bottom left
     margin: 3px 10px 0px 10px;
   }
   .perfil {
     @include switch-right;
-    //top right bottom left
+    //*top right bottom left
     margin: 3px 20px 0px 10px;
     .header-menu-desplegable {
       display: none;
       position: absolute;
-      //top right bottom left
+      //*top right bottom left
       margin: 31px 0px 0px -100px;
       background: rgb(255, 255, 255);
       height: 153px;

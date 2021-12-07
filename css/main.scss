@@ -2,9 +2,7 @@
 @import "import/mixin";
 @import url(import/normalize.css);
 @import "import/style-general";
-@import "import/inicio-menu";
-@import "import/inicio";
-@import "import/login";
+@import "import/index";
 @import "import/pagina-header";
 @import "import/pagina-aside";
 @import "import/pagina1";
@@ -23,3 +21,6 @@
 @import "import/prueba-box";
 @import "import/dark";
 @import 'import/color/light';
+@import "import/galeria";
+@import 'import/pseudos-elementos';
+@import 'import/js';

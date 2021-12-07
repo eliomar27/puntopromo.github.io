@@ -3,7 +3,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, $box-size1);
   grid-auto-rows: $box-size1;
-  //top right bottom left
+  //*top right bottom left
   justify-content: space-evenly;
   // grid-template-rows: masonry;
 overflow: hidden;

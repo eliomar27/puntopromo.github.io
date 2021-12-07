@@ -1,4 +1,4 @@
-/*los "#" son para los id y los "." para los class*/
+//*los "#" son para los id y los "." para los class
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +7,7 @@
 html {
   scroll-behavior: smooth;
   body {
-    // background: #0d1117;
+    //background: #0d1117;
     position: sticky;
     top: 0px;
     header {
@@ -18,14 +18,14 @@ html {
     }
   }
 }
-/*los cambios que van a pasar*/
+//*los cambios que van a pasar
 
 #box {
   min-width: 500px;
   display: grid;
   grid-template-columns: repeat(auto-fill, $width1);
   justify-content: space-evenly;
-  //top right bottom left
+  //*top right bottom left
   margin:12px 0px 0px 12px;
   .box-outside {
     width: $width1;

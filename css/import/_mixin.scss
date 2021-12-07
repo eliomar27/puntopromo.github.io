@@ -10,12 +10,12 @@
   background: cover;
 }
 @mixin cutout-text {
-  /*para que funcione tiene que estar el fondo blanco y letras negras*/
+  //*para que funcione tiene que estar el fondo blanco y letras negras
   font-weight: bold;
   mix-blend-mode: screen;
 }
 @mixin switch-left {
-  //wallpaper sol
+  //*wallpaper sol
   background: #00a1f8;
   border-radius: 50px;
   border: none;
@@ -38,7 +38,7 @@
     border: #00a1f8 solid 2px;
   }
   &.active {
-    //wallpaper luna
+    //*wallpaper luna
     background: #094977;
     transform: translate(0%, 0%);
     &::after {
@@ -101,7 +101,7 @@
       width: 90%;
       margin: auto;
       height: 5%;
-      /*ponerlos en horizontal*/
+      //*ponerlos en horizontal
       display: flex;
       justify-content: space-between;
       a {
@@ -131,3 +131,5 @@
     margin-bottom: -5px;
   }
 }
+//*En caso de hacer una animacion y querer guardar como queda el elemento usar:
+//  animation-fill-mode: forwards;

@@ -18,6 +18,8 @@
       }
     }
     svg {
+      //*sombra a las img
+   //   filter: drop-shadow(1px 1px 1px rgb(255, 0, 0));
       margin: 0 auto;
       height: 42px;
       width: 42px;
@@ -76,7 +78,7 @@
         svg {
         }
         span {
-          //top right bottom left
+          //*top right bottom left
           margin: -42px 0px 0px 42px;
           padding-top: 7.5px;
           font-size: 1.25em;

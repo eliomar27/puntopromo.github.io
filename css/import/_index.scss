@@ -1,0 +1,371 @@
+.index-body {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr) 50px;
+  .index-menu {
+    grid-column: span 6;
+    grid-row: span 10;
+    width: 100%;
+    height: 100%;
+/*    background: #ff0000;
+    background: linear-gradient(
+      90deg,
+      #ff0000 13%,
+      #bf0000 40%,
+      #830000 83%,
+      #000000 100%
+    );*/
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    .service-pentagono {
+      grid-column: 1 / span 4;
+      grid-row: 4 / span 4;
+      background: #ffffff;
+      margin-left: 20px;
+      border-bottom: #000000 solid 2px;
+      border-radius: 5px;
+      height: 250px;
+      min-width: 320px;
+
+    }
+    .pentagono-box {
+      grid-column: 6 / span 1;
+      grid-row: 5 / span 2;
+      width: 160px;
+      height: 140px;
+      position: relative;
+      margin: auto;
+      top: 25px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      .hexagonos {
+        height: 60px;
+        width: 80px;
+        position: absolute;
+        // clip-path: polygon(
+        //   25% 0%,
+        //   75% 0%,
+        //   100% 50%,
+        //   75% 100%,
+        //   25% 100%,
+        //   0% 50%
+        // );
+        background: #2e2e2e;
+        cursor: pointer;
+        &:hover {
+          background: #2e2e2e;
+          svg {
+            color: #fff;
+          }
+        }
+        svg {
+          z-index: 999;
+          width: 55px;
+          height: 55px;
+          position: relative;
+          top: 2px;
+          left: 12.5px;
+        }
+      }
+      .pentakill {
+        background: #2e2e2e;
+        svg {
+          color: #fff;
+        }
+        .service {
+          margin-top: 200px;
+          width: 400px;
+          position: absolute;
+          background: #ffffff;
+          .service-contenido {
+            .service-titulo {
+              text-align: center;
+              padding: 10px;
+            }
+            .service-parrafo {
+              margin-left: 20px;
+              margin-right: 20px;
+              text-align: justify;
+            }
+            .service-mas {
+              color: #242424;
+              position: relative;
+              padding: 20px;
+              &:hover {
+                color: blue;
+                text-decoration-line: underline;
+              }
+            }
+          }
+        }
+      }
+      .v1 {
+        //*Horizontal - Vertical
+        transform: translate(0%, -105%);
+      }
+      .v2 {
+        transform: translate(-80%, -50%);
+      }
+      .v3 {
+        transform: translate(-80%, 55%);
+      }
+      .v4 {
+        transform: translate(0%, 105%);
+      }
+      .v5 {
+        transform: translate(80%, 55%);
+      }
+      .v6 {
+        transform: translate(80%, -50%);
+      }
+    }
+  }
+  .index-login {
+    grid-column: span 4;
+    grid-row: span 10;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    .index-contenedor {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      grid-column: 2 / span 4;
+      grid-row: 3 / span 4;
+      width: 320px;
+      position: relative;
+      margin-top: -40px;
+      height: 300px;
+      background: #ffffff;
+      min-height: 318px;
+      border-radius: 5px;
+      .box-outside {
+        position: relative;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        top: -10%;
+        .box-inside {
+          position: absolute;
+          width: 100px;
+          height: 100px;
+          border-radius: 50%;
+          text-align: center;
+          transition: all 0.4s ease-in-out;
+          div {
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background-position: center center;
+            img {
+              margin: 10px;
+              width: 80px;
+            }
+          }
+          .adelante {
+            background: #000000;
+            transition: all 0.6s ease-in-out;
+          }
+        }
+        .atras {
+          transform: scale(1.5);
+          box-shadow: inset 0 0 3px #00000033;
+          transition: all 0.4s ease-in-out 0.2s;
+          opacity: 0;
+        }
+      }
+      &:hover {
+        .adelante {
+          transform: scale(0);
+        }
+        .atras {
+          background: #222222;
+          transform: scale(1);
+          opacity: 1;
+          pointer-events: auto;
+        }
+      }
+      input {
+        margin: 10px;
+        width: 255px;
+        font-size: 1.1em;
+      }
+      .index-titulo-login {
+        font-size: 1.5em;
+      }
+      .index-email {
+      }
+      .index-password {
+      }
+      .index-inicio {
+        button {
+          font-size: 1.1em;
+          width: 255px;
+          padding: 2px;
+        }
+      }
+      .index-login-registro {
+        padding: 10px;
+        strong {
+          color: #000;
+        }
+      }
+    }
+  }
+  .index-footer {
+    grid-column: span 10;
+    grid-row: span 1;
+    background: #222222;
+    color: #fff;
+    padding: 5px;
+  }
+}
+
+
+@media screen and (max-width: 1050px) {
+  .index-body {
+    height: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(2,100vh) 50px;
+    .index-menu {
+      grid-column: span 1;
+      grid-row: 2;
+      width: 100%;
+      height: 100%;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      // .service-pentagono {
+      //   grid-column: 1;
+      //   grid-row: 2;
+      //   background: #ffffff;
+      //   margin-left: 5%;
+      //   border-bottom: #ff0000 solid 2px;
+      //   border-radius: 5px;
+      //   height: 250px;
+      //   width: 90%;
+      //   .service {
+      //     .service-contenido {
+      //       .service-titulo {
+      //         text-align: center;
+      //         padding: 10px;
+      //       }
+      //       .service-parrafo {
+      //         margin-left: 20px;
+      //         margin-right: 20px;
+      //         text-align: justify;
+      //       }
+      //       .service-mas {
+      //         color: #242424;
+      //         position: relative;
+      //         padding: 20px;
+      //         &:hover {
+      //           color: blue;
+      //           text-decoration-line: underline;
+      //         }
+      //       }
+      //     }
+      //   }
+      // }
+      .pentagono-box {
+        grid-column: 1 / span 1;
+        grid-row: 1 / span 1;
+        width: 160px;
+        height: 140px;
+        position: relative;
+        margin: auto;
+        top: 25px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        .pentakill {
+          svg {
+            color: #fff;
+          }
+        }
+        .v1 {
+          //*Horizontal - Vertical
+          transform: translate(0%, -105%);
+        }
+        .v2 {
+          transform: translate(-80%, -50%);
+        }
+        .v3 {
+          transform: translate(-80%, 55%);
+        }
+        .v4 {
+          transform: translate(0%, 105%);
+        }
+        .v5 {
+          transform: translate(80%, 55%);
+        }
+        .v6 {
+          transform: translate(80%, -50%);
+        }
+      }
+    }
+    .index-login {
+      grid-column: span 1;
+      grid-row: 1;
+      width: 100%;
+      height: 100%;
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+      .index-contenedor {
+        flex-direction: column;
+        align-items: center;
+        grid-column: 2 / span 4;
+        grid-row: 2 / span 2;
+        width: 100%;
+        height: 0px;
+        height: 100%;
+        .box-outside {
+          position: relative;
+          width: 100px;
+          height: 100px;
+          top: -10%;
+        }
+      }
+      input {
+        margin: 10px;
+        width: 255px;
+        font-size: 1.1em;
+      }
+      .index-titulo-login {
+        font-size: 1.5em;
+      }
+      .index-email {
+      }
+      .index-password {
+      }
+      .index-inicio {
+        button {
+          font-size: 1.1em;
+          width: 255px;
+          padding: 2px;
+        }
+      }
+      .index-login-registro {
+        padding: 10px;
+        strong {
+          color: #000;
+        }
+      }
+    }
+  }
+  .index-footer {
+    grid-column: span 10;
+    grid-row: 3;
+  }
+}
+

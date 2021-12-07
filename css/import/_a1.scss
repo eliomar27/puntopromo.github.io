@@ -1,4 +1,4 @@
-//estilo de los articulos...
+//*estilo de los articulos...
 .a1 {
   
   background: url(img/02.jpg);
@@ -69,7 +69,7 @@
       grid-template-columns: subgrid;
       h2 {
         grid-column: span 8;
-        //top right bottom left
+        //*top right bottom left
         margin: 10px 0px 0px 0px;
         text-align: center;
         font-size:200%;
@@ -85,7 +85,7 @@
         background: #ffffff80;
         border-radius: 10px;
         font-weight:bolder;
-        //top right bottom left
+        //*top right bottom left
         margin: 20px 0px 0px 0px;
         text-align: justify;
         font-size:125%;

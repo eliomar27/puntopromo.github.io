@@ -5,7 +5,7 @@
   justify-content: space-evenly;
   grid-template-rows: masonry;
   .secciones-main {
-    //top right bottom left
+    //*top right bottom left
     margin: 15px 15px 15px 15px;
     border-radius: 10px;
     padding: 5px;
@@ -15,7 +15,7 @@
       }
     }
     div {
-      //top right bottom left
+      //*top right bottom left
       padding: 10px 0px 10px 0px;
       a {
         background: #f5f5f5;
