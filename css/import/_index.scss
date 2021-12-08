@@ -4,11 +4,11 @@
   grid-template-columns: repeat(10, 1fr);
   grid-template-rows: repeat(10, 1fr) 50px;
   .index-menu {
-    grid-column: span 6;
+    grid-column: span 5;
     grid-row: span 10;
     width: 100%;
     height: 100%;
-/*    background: #ff0000;
+    /*    background: #ff0000;
     background: linear-gradient(
       90deg,
       #ff0000 13%,
@@ -17,33 +17,76 @@
       #000000 100%
     );*/
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(10, 1fr);
-    .service-pentagono {
-      grid-column: 1 / span 4;
-      grid-row: 4 / span 4;
-      background: #ffffff;
-      margin-left: 20px;
-      border-bottom: #000000 solid 2px;
-      border-radius: 5px;
-      height: 250px;
-      min-width: 320px;
-
-    }
     .pentagono-box {
-      grid-column: 6 / span 1;
+      grid-column: 8 / span 2;
       grid-row: 5 / span 2;
-      width: 160px;
-      height: 140px;
+      width: 100%;
+      height: 100%;
       position: relative;
       margin: auto;
-      top: 25px;
       left: 0;
       right: 0;
       bottom: 0;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      .v1 {
+        //*Horizontal - Vertical
+        transform: translate(0%, -110%);
+        .service-1 {
+          background: rgb(193, 177, 248);
+          transform: translate(-110%, -110.5%);
+          display: none;
+        }
+      }
+      .v2 {
+        transform: translate(-90%, -55%);
+        .service-2 {
+          transform: translate(-101%, -119.6%);
+          background: rgb(255, 215, 215);
+          display: none;
+        }
+      }
+      .v3 {
+        transform: translate(-90%, 55%);
+        .service-3 {
+          transform: translate(-101%, -137.9%);
+          background: #e1fc82;
+          display: none;
+        }
+      }
+      .v4 {
+        transform: translate(0%, 110%);
+        .service-4 {
+          transform: translate(-110%, -147%);
+          background: #fec2ec;
+          display: none;
+        }
+      }
+      .v5 {
+        transform: translate(90%, 55%);
+        .service-5 {
+          transform: translate(-119%, -137.9%);
+          background: #ffc9a8;
+          display: none;
+        }
+      }
+      .v6 {
+        transform: translate(90%, -55%);
+        .service-6 {
+          transform: translate(-119%, -119.5%);
+          background: #c1ddff;
+          display: none;
+        }
+      }
       .hexagonos {
-        height: 60px;
-        width: 80px;
+        grid-column: 2 / span 1;
+        grid-row: 2 / span 1;
+        height: 100%;
+        width: 100%;
+        background: #fff;
         position: absolute;
         // clip-path: polygon(
         //   25% 0%,
@@ -53,47 +96,40 @@
         //   25% 100%,
         //   0% 50%
         // );
-        background: #2e2e2e;
+        background: #49fcff;
+        border-radius: 50%;
         cursor: pointer;
         &:hover {
           background: #2e2e2e;
           svg {
-            color: #fff;
+            color: #49fcff;
           }
         }
         svg {
-          z-index: 999;
-          width: 55px;
-          height: 55px;
-          position: relative;
-          top: 2px;
-          left: 12.5px;
-        }
-      }
-      .pentakill {
-        background: #2e2e2e;
-        svg {
-          color: #fff;
+          width: 90%;
+          height: 90%;
+          margin: 5%;
         }
         .service {
-          margin-top: 200px;
-          width: 400px;
-          position: absolute;
+          margin-top: 350%;
+          margin-left: -100%;
+          width: 800%;
           background: #ffffff;
           .service-contenido {
             .service-titulo {
               text-align: center;
-              padding: 10px;
+              font-size: 150%;
             }
             .service-parrafo {
-              margin-left: 20px;
-              margin-right: 20px;
+              margin: 5%;
               text-align: justify;
+              font-size: 125%;
             }
             .service-mas {
+              font-size: 110%;
               color: #242424;
               position: relative;
-              padding: 20px;
+              padding: 5%;
               &:hover {
                 color: blue;
                 text-decoration-line: underline;
@@ -102,29 +138,34 @@
           }
         }
       }
-      .v1 {
-        //*Horizontal - Vertical
-        transform: translate(0%, -105%);
-      }
-      .v2 {
-        transform: translate(-80%, -50%);
-      }
-      .v3 {
-        transform: translate(-80%, 55%);
-      }
-      .v4 {
-        transform: translate(0%, 105%);
-      }
-      .v5 {
-        transform: translate(80%, 55%);
-      }
-      .v6 {
-        transform: translate(80%, -50%);
+      .pentakill {
+        background: #000;
+        svg {
+          color: #49fcff;
+        }
+        .service-1 {
+          display: block;
+        }
+        .service-2 {
+          display: block;
+        }
+        .service-3 {
+          display: block;
+        }
+        .service-4 {
+          display: block;
+        }
+        .service-5 {
+          display: block;
+        }
+        .service-6 {
+          display: block;
+        }
       }
     }
   }
   .index-login {
-    grid-column: span 4;
+    grid-column: span 5;
     grid-row: span 10;
     width: 100%;
     height: 100%;
@@ -228,144 +269,3 @@
     padding: 5px;
   }
 }
-
-
-@media screen and (max-width: 1050px) {
-  .index-body {
-    height: 100%;
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: repeat(2,100vh) 50px;
-    .index-menu {
-      grid-column: span 1;
-      grid-row: 2;
-      width: 100%;
-      height: 100%;
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: auto;
-      // .service-pentagono {
-      //   grid-column: 1;
-      //   grid-row: 2;
-      //   background: #ffffff;
-      //   margin-left: 5%;
-      //   border-bottom: #ff0000 solid 2px;
-      //   border-radius: 5px;
-      //   height: 250px;
-      //   width: 90%;
-      //   .service {
-      //     .service-contenido {
-      //       .service-titulo {
-      //         text-align: center;
-      //         padding: 10px;
-      //       }
-      //       .service-parrafo {
-      //         margin-left: 20px;
-      //         margin-right: 20px;
-      //         text-align: justify;
-      //       }
-      //       .service-mas {
-      //         color: #242424;
-      //         position: relative;
-      //         padding: 20px;
-      //         &:hover {
-      //           color: blue;
-      //           text-decoration-line: underline;
-      //         }
-      //       }
-      //     }
-      //   }
-      // }
-      .pentagono-box {
-        grid-column: 1 / span 1;
-        grid-row: 1 / span 1;
-        width: 160px;
-        height: 140px;
-        position: relative;
-        margin: auto;
-        top: 25px;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        .pentakill {
-          svg {
-            color: #fff;
-          }
-        }
-        .v1 {
-          //*Horizontal - Vertical
-          transform: translate(0%, -105%);
-        }
-        .v2 {
-          transform: translate(-80%, -50%);
-        }
-        .v3 {
-          transform: translate(-80%, 55%);
-        }
-        .v4 {
-          transform: translate(0%, 105%);
-        }
-        .v5 {
-          transform: translate(80%, 55%);
-        }
-        .v6 {
-          transform: translate(80%, -50%);
-        }
-      }
-    }
-    .index-login {
-      grid-column: span 1;
-      grid-row: 1;
-      width: 100%;
-      height: 100%;
-      display: grid;
-      grid-template-columns: repeat(6, 1fr);
-      grid-template-rows: repeat(4, 1fr);
-      .index-contenedor {
-        flex-direction: column;
-        align-items: center;
-        grid-column: 2 / span 4;
-        grid-row: 2 / span 2;
-        width: 100%;
-        height: 0px;
-        height: 100%;
-        .box-outside {
-          position: relative;
-          width: 100px;
-          height: 100px;
-          top: -10%;
-        }
-      }
-      input {
-        margin: 10px;
-        width: 255px;
-        font-size: 1.1em;
-      }
-      .index-titulo-login {
-        font-size: 1.5em;
-      }
-      .index-email {
-      }
-      .index-password {
-      }
-      .index-inicio {
-        button {
-          font-size: 1.1em;
-          width: 255px;
-          padding: 2px;
-        }
-      }
-      .index-login-registro {
-        padding: 10px;
-        strong {
-          color: #000;
-        }
-      }
-    }
-  }
-  .index-footer {
-    grid-column: span 10;
-    grid-row: 3;
-  }
-}
-
