@@ -1,4 +1,6 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 @import url(import/normalize.css);
 .contenedor-pagina {
   display: -ms-grid;
@@ -66,6 +68,7 @@ a {
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
 
 html {
@@ -87,14 +90,6 @@ html {
   grid-row: span 10;
   width: 100%;
   height: 100%;
-  /*    background: #ff0000;
-    background: linear-gradient(
-      90deg,
-      #ff0000 13%,
-      #bf0000 40%,
-      #830000 83%,
-      #000000 100%
-    );*/
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[10];
@@ -1989,7 +1984,6 @@ a:hover {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Orbitron", sans-serif;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -3283,6 +3277,7 @@ a:hover {
   color: #00ff00;
   letter-spacing: 5px;
   font-size: 1.05em;
+  text-transform: capitalize;
 }
 
 #js .pc {

@@ -18,8 +18,8 @@
       display: none;
       body.menu & {
         display: block;
-        @media screen and (max-width: 800px) { 
-            display: none;
+        @media screen and (max-width: 800px) {
+          display: none;
         }
       }
     }
@@ -34,7 +34,6 @@
 a {
   text-decoration-line: none;
   color: #000000;
-
 }
 .svg-color {
   color: #000;
@@ -43,6 +42,7 @@ a {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
 html {
   scroll-behavior: smooth;

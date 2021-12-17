@@ -8,14 +8,6 @@
     grid-row: span 10;
     width: 100%;
     height: 100%;
-    /*    background: #ff0000;
-    background: linear-gradient(
-      90deg,
-      #ff0000 13%,
-      #bf0000 40%,
-      #830000 83%,
-      #000000 100%
-    );*/
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(10, 1fr);
@@ -88,14 +80,6 @@
         width: 100%;
         background: #fff;
         position: absolute;
-        // clip-path: polygon(
-        //   25% 0%,
-        //   75% 0%,
-        //   100% 50%,
-        //   75% 100%,
-        //   25% 100%,
-        //   0% 50%
-        // );
         background: #49fcff;
         border-radius: 50%;
         cursor: pointer;
@@ -161,6 +145,9 @@
         .service-6 {
           display: block;
         }
+      }
+      .v7:active{
+        
       }
     }
   }

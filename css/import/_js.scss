@@ -7,6 +7,7 @@ $texto-titulos: 1.5em;
   color: #00ff00;
   letter-spacing: 5px;
   font-size: $texto2;
+  text-transform:capitalize;
   .pc {
     color: #adff2f;
     font-size: $texto1;
